@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="final.css">
+
+  <title>Huiqi Chen</title>
+ 
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="home page.html" class="nav-item active">HOME</a></li>
+                <li><a href="experience.html" class="nav-item">EXPERIENCE</a></li>
+                <li><a href="#contact" class="nav-item">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="hero">
+        <h1>HELLO, I AM<h1>
+        <div class="highlight">HUIQI CHEN</div>
+        <p>A senior student @ UCSD</p>
+        <a href="Chen-Lab9 CV.pdf" download>
+        <button class="btn-download btn-outline-secondary btn-lg download-button">DOWNLOAD CV</button></a>
+      </section>
+    
+
+
+        <section id="introduction">
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                    <div class="services-list">
+                        <span class="word-box">Content Strategy</span>
+                        <span class="word">Copywriting</span>
+                        <span class="word">Design</span>
+                        <span class="word-box">SEO</span>
+                        <span class="word-box">Campaign Management</span>
+                        <span class="word">Advertising</span>
+                        <span class="word">Branding</span>
+                        <span class="word-box">Social Media</span>
+                        <span class="word">Email Marketing</span>
+                        <span class="word">Research</span>
+                        <span class="word-box">Data Analysis</span>
+                        <span class="word-box">Digital Marketing</span>
+                        <span class="word">Community Engagement</span>
+                    </div>
+                </div>
+
+                <div class="feature-box col-lg-4">
+                    <img src="image/2.jpeg" alt="christine" class="profile-pic">
+                </div>
+                    
+                <div class="feature-box col-lg-4">
+                <div class="skill-item">
+                    <label for="design">MARKETING</label>
+                    <div class="skill-bar">
+                        <div class="skill-level design" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label for="photography">BRANDING</label>
+                    <div class="skill-bar">
+                        <div class="skill-level photography" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label for="marketing">DESIGN</label>
+                    <div class="skill-bar">
+                        <div class="skill-level marketing" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <label for="branding">PHOTOGRAPHY</label>
+                    <div class="skill-bar">
+                        <div class="skill-level branding" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <section id="personalbrand">
+        <div class="split-screen">
+          <div class="left-pane">
+            <div class="image-container">
+                <img src="image/41.jpg" alt="personalbrand">
+          </div>
+          </div>
+  
+          <div class="right-pane">
+            <div class="content">
+              <h1>Hi! My name is Christine</h1>
+              <p>
+                With a heart for sustainable impact and equity, I am a forward-thinking marketer whose strategies are data-informed and purpose-driven. My approach is to cultivate growth anchored in social good, embracing innovation and proactivity.</p>
+               <p> 
+                Recently graduating with a B.S. in Business Economics and a minor in Communication from UC San Diego, I am primed for a career where I can put my analytical prowess and market insights to work. My internships with Pfizer and VYBA honed my strategic planning, content marketing, and data analytics skills, ensuring that my marketing strategies are not only creative but also data-driven and results-oriented.</p>
+                <p>
+                Currently, I am seeking opportunities that will leverage my robust marketing skills and passion for community building. I am excited to embark on a professional journey where I can continue to foster brand excellence and innovation.</p>
+            </div>
+          </div>
+        </div>
+        </section>
+
+    <section id="personality">
+            <div class="contact-section">
+                <a href="https://www.linkedin.com/in/huiqi-chen-457783237/" target="_blank" class="linkedin-link">
+                    <img src="image/7.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+                <div class="linkedin-text">Connect with me on LinkedIn!</div>
+                <p class="inquiry-text">Inquiries may be sent to huc011@ucsd.edu</p> 
+            </div>    
+    </section>
+ 
+
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Contact Me</h2>
+          <ul class="contact-info">
+            <li>
+              <img src="image/9.jpeg" alt="Email Icon" class="contact-icon">
+              <a href="mailto:huc011@ucsd.edu">huc011@ucsd.edu</a>
+            </li>
+            <li>
+              <img src="image/7.png" alt="LinkedIn Icon" class="contact-icon">
+              <a href="https://www.linkedin.com/in/huiqi-chen-457783237/" target="_blank">LinkedIn Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+     
+
+    <section id="footer">
+        <p class="copyright">&copy; 2023 Huiqi Chen. All Rights Reserved.</p>
+    </section>
+    
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+   
+    var navItems = document.querySelectorAll('.nav-item');
+
+  
+    navItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+           
+            navItems.forEach(function(nav) {
+                nav.classList.remove('active');
+            });
+          
+            item.classList.add('active');
+        });
+    });
+});
+</script>
+
+<script>
+ var modal = document.getElementById("contactModal");
+
+// Get the button that opens the modal
+var contactBtn = document.querySelector(".nav-item[href='#contact']");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the contact button, open the modal 
+contactBtn.onclick = function(e) {
+  e.preventDefault(); // Prevent the default anchor behavior
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      // When element's is in viewport, add the 'visible' class
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Optionally unobserve after animation
+      }
+    });
+  }, { threshold: [0.1] }); // Trigger when at least 10% of the element is visible
+
+  // Target elements to observe
+  document.querySelectorAll('.skill-bar').forEach(bar => {
+    observer.observe(bar);
+  });
+});
+        </script>
+
+    </body>
+    </html>

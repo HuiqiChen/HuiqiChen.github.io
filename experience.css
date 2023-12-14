@@ -1,0 +1,311 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  padding-top:0;
+  margin-top:0;
+}
+
+.header nav {
+  background-color:white; 
+  text-align: center;
+  padding: 0em 0;
+  height:50px;
+  line-height:50px;
+  margin-top:0;
+}
+
+
+.header nav ul {
+  list-style-type: none;
+  padding: 1px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-top:0;
+}
+
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 15px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: black; 
+}
+
+@media (max-width: 768px) {
+  nav li {
+    margin-right: 25px; /* Smaller margin for smaller screens */
+  }
+
+}
+
+.nav-item {
+  padding: 0px 15px;
+  text-decoration: none;
+  color: black; 
+  display: inline-block;
+  padding-top:0;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  background-color: rgba(255, 182, 193, 0.382);
+  display: inline-block;
+}
+
+.active {
+  background-color:  rgba(255, 182, 193, 0.382); 
+  color: white; 
+  border-radius: 9px; 
+  height: 45px;
+}
+
+
+#title-container {
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center; 
+  padding: 55px;
+  background: url('image/8.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+
+}
+
+#title-container h2 {
+  font-family:cursive;
+  font-weight:bolder;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color:black;
+}
+
+.logos-container {
+    text-align: center; /* Centers the logos */
+    padding: 20px; /* Adds padding around the logos */
+   
+   
+}
+
+.client-logo {
+  width: 150px; 
+  height:100px;
+  margin: 10px; 
+  display: inline-block; /* Aligns logos horizontally */
+  vertical-align: middle; 
+}
+
+.client-logo:hover {
+  transform: rotate(5deg); /* Rotates the image 5 degrees on hover */
+  filter: brightness(120%);
+}
+
+
+.split-screen {
+  display: flex;
+  height: 100vh; /* 100% of the viewport height */
+}
+
+.left-pane {
+  width: 45%;
+  position: relative; /* For positioning the video/image */
+}
+
+.right-pane {
+  width: 55%;
+  background-color: #fff; /* Assuming a white background */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.image-container img{
+  border: 3px solid #555;
+  width:65%;
+  height: auto;
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom:10px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container img {
+    width: 250px; 
+    height: 150px; 
+  }
+}
+
+.right-pane h1 {
+  font-size: 3em; /* Example size, adjust as needed */
+  color: #000; /* Assuming black text color */
+  font-weight:bolder;
+  font-family: 'Arial', sans-serif;
+  margin-bottom:3px;
+}
+
+.right-pane h2 {
+  font-size: 1.5em;
+  color:blue;
+  font-weight: bolder;
+  font-family: 'Arial', sans-serif;
+  font-style: oblique;
+  margin-bottom:40px;
+}
+
+.right-pane p {
+  margin-bottom: 20px; 
+  font-size: 1.2em;
+  color: #333;
+  font-weight:normal;
+  font-family: 'Arial', sans-serif;
+}
+
+.right-pane ul li {
+  margin-bottom: 10px; 
+  font-size: 1.2em;
+  color: #333;
+  font-weight:normal;
+  font-family: 'Arial', sans-serif;
+}
+
+.years p {
+  font-size: 1em;
+  color: #666; 
+  margin-bottom:10px;
+}
+
+@media screen and (max-width: 768px) {
+  .right-pane h1 {
+    font-size: 2em; /* Smaller font size */
+  }
+
+  .right-pane h2 {
+    font-size: 1em;
+  }
+
+  .right-pane p, .right-pane ul li {
+    font-size: 0.9em; /* Smaller font size */
+  }
+
+  .years p {
+    font-size: 0.8em;
+  }
+}
+
+
+hr {
+  border: 0;               /* Remove the default border */
+  height: 2px;             /* Set the height of the line */
+  background-color: lightskyblue;  /* Set the color of the line */
+  margin-top: 5px;        /* Set the top margin */
+  margin-bottom: 60px;     /* Set the bottom margin */
+}
+.services-list {
+  list-style: none; 
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1;
+  font-size: 15px; 
+}
+
+.services-list li {
+  margin-bottom: 5px;/*space between lists items*/
+}
+
+.services-list li:before {
+  content: '✔\00a0'; /* Unicode for checkmark and a non-breaking space */
+  margin-right: 8px; /* Adds space between checkmark and text */
+  font-weight: bold; 
+  color: blue; 
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  border: 5px solid #888;
+  width: 30%; 
+  height:30%;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers flex items along the main axis */
+  align-items: center; /* Centers flex items along the cross axis */
+  position: relative;
+  flex-direction: column;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  left: 10px; 
+  top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.contact-info li {
+  margin-bottom: 10px; 
+  align-items: center; /* Aligns the icon with the text */
+  display: flex;
+}
+
+.contact-icon {
+  margin-right: 10px; 
+  width: 36px; 
+  height: 36px; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Style for the email and LinkedIn links */
+.contact-info a {
+  color: #0077b5; 
+  text-decoration:none;
+  display:inline;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  text-decoration: underline; 
+}
+
+
+
